@@ -8,7 +8,3 @@ export const app = fastify()
 app.register(cookie)
 app.register(usersRoutes, { prefix: 'users' })
 app.register(mealsRoutes, { prefix: 'meals' })
-// app.get('/meals', (request, reply) => {
-//   console.log('entrou na rota')
-//   return reply.send({ message: 'TESTE ROTA' })
-// })
